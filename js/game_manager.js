@@ -28,12 +28,9 @@ function GameManager(size, InputManager, Actuator) {
   this.setup();
 }
 
-// Restart the game
+
 GameManager.prototype.restart = function () {
-  this.actuator.restart();
-  this.running = false;
-  this.actuator.setRunButton('Auto-run');
-  this.setup();
+  this.actuator.continueGame();
 };
 
 // Set up the game
