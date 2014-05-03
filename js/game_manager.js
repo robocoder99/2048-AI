@@ -30,7 +30,7 @@ function GameManager(size, InputManager, Actuator) {
 
 
 GameManager.prototype.restart = function () {
-  this.actuator.continueGame();
+  
 };
 
 // Set up the game
